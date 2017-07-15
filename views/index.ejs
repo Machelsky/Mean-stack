@@ -1,111 +1,128 @@
 <html ng-app="speakup">
-	<head>
-		<link href="assets/style.css" type="text/css" rel="stylesheet"/>
-		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<title> Haha</title>
-		<link href="style.css" type="text/css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<head>
+	<link href="assets/style.css" type="text/css" rel="stylesheet"/>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<title> Haha</title>
+	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
-	</head>
-	<body ng-controller = "MainController">
-			<script src="js/routes.js"></script>
+</head>
+<body ng-controller = "MainController">
+	<div ng-view></div>
+	<script src="js/routes.js"></script>
 
-			<script src="js/app.js"></script>
-		<div class="pagetitle">
-			   	<p id="firsttitle"> Speak Up</p>
-		</div>
-   <section class="hero-wrap">
-	<a href = "#third"><button id="input_button" type="button" class="btn btn-primary btn-lg">Submit An Issue</button></a>
-		<p id="know_more">Know More</p>
-      <a href="#second" class="continue">
-      </a>
-    </section>
-   <section id="second" class="secondpage">
-   	<p id="secondtitle">How it works</p>
-   	<div id="image_gap">
-		<img id="second_image" src="images/chatting.png">
-		<img id="arrow" src="images/right-arrow.png">
-		<img id="second_image" src="images/vote.png">
-		<img id="arrow" src="images/right-arrow.png">
-		<img id="second_image" src="images/voice.png">
+	<script src="js/app.js"></script>
+	<div class="pagetitle">
+		<p id="firsttitle"> Speak Up</p>
 	</div>
-	<p id="know_more2">Get Started</p>
-      <a href="#third" class="continue">
-      </a>
-   </section>
-   <section id="third" class="thirdpage">
-<form id="submitform">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect1">Example select</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-  </div>
-  <fieldset class="form-group">
-    <legend>Radio buttons</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-        Option two can be something else and selecting it will deselect option one
-      </label>
-    </div>
-    <div class="form-check disabled">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-        Option three is disabled
-      </label>
-    </div>
-  </fieldset>
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
-      Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-   </section>
-	</body>
+	<section class="hero-wrap">
+		<a href = "#fourth"><button id="input_button" type="button" class="btn btn-primary btn-lg">Submit An Issue</button></a>
+		<p id="know_more">Know More</p>
+		<a href="#second" class="continue">
+		</a>
+	</section>
+	<section id="second" class="secondpage">
+		<p id="secondtitle">How it works</p>
+		<div id="image_gap">
+			<img id="second_image" src="images/chatting.png">
+			<img id="arrow" src="images/right-arrow.png">
+			<img id="second_image" src="images/vote.png">
+			<img id="arrow" src="images/right-arrow.png">
+			<img id="second_image" src="images/voice.png">
+		</div>
+		<p id="know_more2">Get Started</p>
+		<a href="#third" class="continue">
+		</a>
+	</section>
+	<section id="third" class="thirdpage">
+		<p id="secondtitle">OUR ACCOMPLISHMENTS</p>
+		<div id="image_gap">
+			<img id="third_image" src="images/box1.jpg">
+			<img id="third_image" src="images/box2.jpg">
+			<img id="third_image" src="images/box3.jpg">
+		</div>
+		<div id="showmore_button">
+		<a class="col-md-4" href = "/person"><button id="input_button" type="button" class="btn btn-primary btn-lg">See More</button></a>
+		<a class="col-md-4" href = "#fourth"><button id="input_button" type="button" class="btn btn-primary btn-lg">See More</button></a>
+		<a class="col-md-4" href = "#fourth"><button id="input_button" type="button" class="btn btn-primary btn-lg">See More</button></a>
+		</div>
+		<p id="know_more2">Get Started</p>
+		<a href="#fourth" class="continue">
+		</a>
+	</section>
+	<section id="fourth" class="fourthpage">
+		<form id="submitform">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<label for="exampleSelect1">Example select</label>
+				<select class="form-control" id="exampleSelect1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleSelect2">Example multiple select</label>
+				<select multiple class="form-control" id="exampleSelect2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleTextarea">Example textarea</label>
+				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+				<small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+			</div>
+			<fieldset class="form-group">
+				<legend>Radio buttons</legend>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						Option one is this and that&mdash;be sure to include why it's great
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+						Option two can be something else and selecting it will deselect option one
+					</label>
+				</div>
+				<div class="form-check disabled">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+						Option three is disabled
+					</label>
+				</div>
+			</fieldset>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" class="form-check-input">
+					Check me out
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</section>
+</body>
 
 </html>

@@ -135,6 +135,12 @@ body {
 	background: white;
 }
 .thirdpage {
+	text-align: center;
+	background-size: 1280px 770px;
+	background: white;
+
+}
+.fourthpage {
 	background-image: url("images/thirdpage.jpg");
   background-size: 1280px 770px;
   background-repeat: no-repeat;
@@ -142,6 +148,11 @@ body {
   	background-color: #6285ab;
 }
 #second_image {
+	margin:10px;
+	width:352px;
+	height: 310px;
+}
+#third_image {
 	margin:10px;
 	width:352px;
 	height: 310px;
@@ -164,4 +175,10 @@ body {
 	padding-top: 130px;
 	text-align: center;
 	color: white;
+}
+#threebox {
+	width:;
+}
+#showmore_button {
+	padding: 50px;
 }

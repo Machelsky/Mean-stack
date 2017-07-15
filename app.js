@@ -9,6 +9,9 @@ app.use('/',express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
 	res.render('index');
 });
+app.get('/person', function(req, res) {
+	res.render('person');
+});
 var apiController = require('./controllers/apiController');
 app.set('view engine', 'ejs');
 var mongoDB = mongoose.connect(config.getDbConnectionString(),{
