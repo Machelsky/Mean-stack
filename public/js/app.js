@@ -1,7 +1,7 @@
-angular.module('TestApp', []);
+angular.module('speakup', []);
 
 
-angular.module('TestApp').controller('MainController', ctrlFunc);
+angular.module('speakup').controller('MainController', ctrlFunc);
 
 
 function ctrlFunc() {
