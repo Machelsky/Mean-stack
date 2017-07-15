@@ -88,6 +88,11 @@ body {
 #know_more {
 	color:#286090;
 }
+#know_more2 {
+	font-size: 35px;
+	padding: 10px;
+	color:#286090;
+}
 .test {
 	background-image: url("images/second.jpeg");
   background-size: 1400px 1200px;
