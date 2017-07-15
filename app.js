@@ -12,6 +12,9 @@ app.get('/', function(req, res) {
 app.get('/person', function(req, res) {
 	res.render('person');
 });
+app.get('/vote', function(req, res) {
+	res.render('vote');
+})
 var apiController = require('./controllers/apiController');
 app.set('view engine', 'ejs');
 var mongoDB = mongoose.connect(config.getDbConnectionString(),{

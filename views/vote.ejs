@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link href="mystyle.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		body {
+			background-image: url("images/back2.jpg");
+		}
+		</style>
+</head>
+<nav class="navbar navbar-default navbar-static-top">
+	<ul id= "linktitle"  class="nav navbar-nav navbar-left">
+		<img src="images/logo.gif">
+	</ul>
+	<ul id = "linktitle" class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="#">Vote</a></li>
+		<li><a href="/person">Post</a></li>
+	</ul>
+</nav>
+<body class="container-full" ng-controller="MainController">
+		<script src="js/routes.js"></script>
+
+	<script src="js/app.js"></script>
+	<div class="col-offset-md-3 col-offset-md-6">
+	<section id="fourth" class="fourthpage">
+		<form id="submitform">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleSelect1">Your Home Country</label>
+				<select class="form-control" id="exampleSelect1">
+					<option>China</option>
+					<option>Japan</option>
+					<option>Korean</option>
+					<option>Italy</option>
+					<option>German</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleSelect2">Satisfication of Immigration Status</label>
+				<select multiple class="form-control" id="exampleSelect2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="exampleTextarea">Immigrants Issues</label>
+				<textarea class="form-control" id="exampleTextarea" rows="2"></textarea>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">File input</label>
+				<input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+				<small id="fileHelp" class="form-text text-muted">Upload picture related to immigrants issues</small>
+			</div>
+			<fieldset class="form-group">
+				<legend>Votes for Rights</legend>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+						More jobs and faier
+					</label>
+				</div>
+				<div class="form-check">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+						Less discrimination
+					</label>
+				</div>
+				<div class="form-check disabled">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+						More benefits
+					</label>
+				</div>
+			</fieldset>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</section>
+</body>
+</html>
