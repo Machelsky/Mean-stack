@@ -25,6 +25,8 @@ time, mark, audio, video {
 }
 @import url('https://fonts.googleapis.com/css?family=Anton');
 @import url('https://fonts.googleapis.com/css?family=Anton|Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
 body {
 	background-image: url("images/background.jpeg");
   background-size: 1280px 770px;
@@ -64,11 +66,12 @@ body {
 
 }
 .hero-wrap {
+  background:;
   text-align: center;
   margin: auto;
   width: 1080px;
   height: 200px;
-  margin-top: 550px;
+  margin-top: 430px;
 }
 .hero-wrap2 {
   margin: auto;
@@ -84,11 +87,6 @@ body {
 }
 #know_more {
 	color:#286090;
-}
-#second p {
-	font-family: 'Shrikhand', cursive;
-	font-size: 35px;
-	color: #8a0f0f;
 }
 .test {
 	background-image: url("images/second.jpeg");
@@ -125,4 +123,40 @@ body {
 .about-content {
   font-size: 1.2em;
   padding: 20px;
+}
+.secondpage {
+	text-align: center;
+	height: 770px;
+	background: white;
+}
+.thirdpage {
+	background-image: url("images/thirdpage.jpg");
+  background-size: 1280px 770px;
+  background-repeat: no-repeat;
+	height: 770px;
+  	background-color: #6285ab;
+}
+#second_image {
+	margin:10px;
+	width:352px;
+	height: 310px;
+}
+#arrow {
+	width: 70px;
+	height: 70px;
+}
+#secondtitle {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 50px;
+	font-family: 'Anton', sans-serif;
+}
+#firsttitle {
+	font-size : 65px;
+}
+.pagetitle {
+	font-size:;
+	padding-top: 130px;
+	text-align: center;
+	color: white;
 }
