@@ -1,6 +1,20 @@
 body {
-		background-image: url("images/back2.jpg");
+		background-image: url("images/back3.png");
   background-size: 1280px 770px;
   background-repeat: no-repeat;
 
+}
+#postpart {
+	text-align: center;
+	background: white;
+	font-size: 35px;
+	height: 650px;
+}
+#linktitle {
+	padding: 10px;
+	font-size: 18px;
+}
+span {
+	font-size: 15px;
+	padding: 30px;
 }

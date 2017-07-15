@@ -1,18 +1,55 @@
 <html>
-	<head>
-			<link href="mystyle.css" type="text/css" rel="stylesheet"/>
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	</head>
-	<nav class="navbar navbar-default">
-	    <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Speak Up</a></li>
-      <li><a href="/">Home</a></li>
-      <li><a href="#">Vote</a></li>
-      <li><a href="#">Post</a></li>
-    </ul>
-    </nav>
-	<body class="container-fluid">
+<head>
+	<link href="mystyle.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<nav class="navbar navbar-default navbar-static-top">
+	<ul id= "linktitle"  class="nav navbar-nav navbar-left">
+		<li ><ahref="/">Speak Up</a></li>
+	</ul>
+	<ul id = "linktitle" class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="#">Vote</a></li>
+		<li><a href="#">Post</a></li>
+	</ul>
+</nav>
+<body class="container-full" ng-controller="MainController">
+		<script src="js/routes.js"></script>
 
+	<script src="js/app.js"></script>
+	<div class="container">
+	<div class="col-md-offset-2 col-md-8" id ="postpart"> 
+		<a href="#" class="col-md-4">Hot</a>
+		<a href="#" class="col-md-4">Latest</a>
+		<a href="#" class="col-md-4">Top</a>
+		<div class="col-md-12">
+	</div>
+	<div class="col-md-12">
+		<img class="col-md-2" src="images/votes.png">
+		<span class="col-md-10">CUNY Citizenship Now!</span>
+	</div>
+	<div class="col-md-12">
+		<img class="col-md-2" src="images/votes.png">
+		<span class="col-md-10">Culture Immigrant Initiate</span>
+	</div>
+	<div class="col-md-12">
+	<img class="col-md-2" src="images/votes.png">
+	<span class="col-md-10">CUNY Citizenship Now!</span>
+	</div>
+	<div class="col-md-12">
+	<img class="col-md-2" src="images/votes.png">
+	<span class="col-md-10">Culture Immigrant Initiate</span>
+	</div>
+	<div class="col-md-12">
+	<img class="col-md-2" src="images/votes.png">
+	<span class="col-md-10"> CUNY Citizenship Now!</span>
+	</div>
+	<div class="col-md-12">
+	<img class="col-md-2" src="images/votes.png">
+	<span class="col-md-10"> Culture Immigrant Initiate</span>
+	</div>
+	</div>
+	</div>
 
-	</body>
+</body>
 </html>
