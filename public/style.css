@@ -23,17 +23,19 @@ time, mark, audio, video {
   font-family: FontAwesome;
   src: url('font-awesome/fonts/fontawesome-webfont.woff');
 }
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Anton|Shrikhand');
 body {
 	background-image: url("images/background.jpeg");
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;       
+  background-size: 1280px 770px;
+  background-repeat: no-repeat;
+
 }
 .continue {
   width: 1px;
   height: 1px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .continue:before {
   font-family: "FontAwesome";
@@ -66,5 +68,61 @@ body {
   margin: auto;
   width: 1080px;
   height: 200px;
-  margin-top: 600px;
+  margin-top: 550px;
+}
+.hero-wrap2 {
+  margin: auto;
+  width: 1080px;
+  height: 200px;
+  margin-top: 550px;
+}
+.hero-wrap3 {
+  margin: auto;
+  width: 1080px;
+  height: 200px;
+  margin-top: 500px;
+}
+#know_more {
+	color:#286090;
+}
+#second p {
+	font-family: 'Shrikhand', cursive;
+	font-size: 35px;
+	color: #8a0f0f;
+}
+.test {
+	background-image: url("images/second.jpeg");
+  background-size: 1400px 1200px;
+    background-repeat:   no-repeat;
+    background-position: center center;     
+}
+#submitform {
+	color:;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+} 
+.about {
+  height: 600px;
+  background-color: #6285ab;
+}
+.about-wrap {
+  width: 800px;
+  padding: 50px 0;
+  box-sizing: border-box;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+.about-content {
+  font-size: 1.2em;
+  padding: 20px;
 }

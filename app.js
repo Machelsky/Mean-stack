@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 var config = require('./config');
 var port = process.env.PORT || 3000;
 var setupController = require('./controllers/setupController');
-app.use('/assets', express.static(__dirname + '/public'));
+app.use('/',express.static(__dirname + '/public'));
 app.get('/', function(req, res) {
 	res.render('index');
 });
