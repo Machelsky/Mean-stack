@@ -1,6 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+@font-face {
+  font-family: FontAwesome;
+  src: url('font-awesome/fonts/fontawesome-webfont.woff');
+}
 body {
 	background-image: url("images/background.jpeg");
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center;              /* optional, center the image *
+    background-position: center center;       
+}
+.continue {
+  width: 1px;
+  height: 1px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.continue:before {
+  font-family: "FontAwesome";
+  content: '\f103';
+  font-size: 2.5em;
+  color: #6285ab;
+}
+.continue:hover:before {
+  cursor: pointer;
+  font-size: 2.6em;
+}
+.input_box {
+	width: 300px;
+	height: 100px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 5px solid blue;
+	  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.input button {
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.hero-wrap {
+  text-align: center;
+  margin: auto;
+  width: 1080px;
+  height: 200px;
+  margin-top: 600px;
 }
